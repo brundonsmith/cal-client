@@ -1,0 +1,15 @@
+
+@import '../globals';
+
+@import './Calendar';
+@import './Day';
+@import './Month';
+
+.component-app {
+  font-family: 'Philosopher';
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#fafafa;
+}
