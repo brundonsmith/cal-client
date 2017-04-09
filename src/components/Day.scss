@@ -1,0 +1,23 @@
+
+.component-day {
+  outline: 1px solid black;
+  width: calc(14.2857142857143%); // 1/7th
+  padding:10px;
+  background:white;
+
+  > .number {
+    float:right;
+    font-size:32px;
+    user-select:none;
+    cursor:default;
+  }
+
+  &.out-of-focus {
+    background:#f0f0f0;
+    color:rgba(0, 0, 0, 0.5);
+  }
+
+  &:not(.out-of-focus) {
+    z-index: 1;
+  }
+}

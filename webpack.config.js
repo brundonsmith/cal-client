@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './components/App.react.js',
+  entry: './src/components/App.react.js',
   resolve: {
     extensions: ['.js', '.react.js', '.json'],
     /*modules: [
@@ -11,7 +11,7 @@ module.exports = {
     ],*/
   },
   output: {
-    path: __dirname,
+    path: __dirname + '/public',
     filename: './App.js'
   },
   module: {

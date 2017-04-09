@@ -1,0 +1,21 @@
+
+@import '../globals';
+
+@import './Calendar';
+@import './Day';
+@import './Month';
+
+.component-app {
+  font-family: 'Open Sans';
+
+  display:flex;
+  justify-content:flex-end;
+  align-items:stretch;
+  height:100vh;
+  background:white;
+
+  > .component-calendar {
+    width:100vmin;
+    height:100vmin;
+  }
+}

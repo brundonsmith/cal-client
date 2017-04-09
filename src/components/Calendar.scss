@@ -5,11 +5,11 @@
   align-items:stretch;
   height:100%;
   width:100%;
+  border:5px solid black;
 
   > .title-bar {
     flex-grow:0;
     flex-shrink:0;
-    font-family: 'Slabo 27px';
     font-size:38px;
     font-weight:bold;
     padding:0.5em;
