@@ -33,13 +33,13 @@ const Month = React.createClass({
       <div className="component-month">
         {days.map((day) =>
           <Day date={day} outOfFocus={day.getMonth() !== this.props.date.getMonth()} key={day} >
-            {this.props.calendar.events
+            {/*this.props.calendar.events
               .filter((event) => {
                 return event.date.getFullYear() === day.getFullYear() &&
                         event.date.getMonth() === day.getMonth() &&
                         event.date.getDate() === day.getDate()
               })
-              .map((event) => <Event event={event} />)
+              .map((event) => <Event event={event} />)*/
             }
           </Day>)}
       </div>

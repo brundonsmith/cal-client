@@ -7,17 +7,16 @@
     "build:style": "node-sass src/components/App.scss public/App.css",
     "build:js": "webpack",
     "build": "npm run build:style && npm run build:js",
-
     "watch:style": "node-sass --watch src/components/App.scss public/App.css",
-    "watch:js": "webpack --watch --save",
-    "watch": "npm run watch:style && npm run watch:js",
-
+    "watch:js": "webpack --watch",
+    "watch": "parallelshell \"npm run watch:style\" \"npm run watch:js\"",
     "serve": "(cd ./public ; python -m SimpleHTTPServer 3000)",
     "serve:dev": "parallelshell \"npm run watch\" \"npm run serve\""
   },
   "author": "Brandon Smith",
   "license": "ISC",
   "dependencies": {
+    "marked": "^0.3.6",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },

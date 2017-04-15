@@ -5,10 +5,10 @@ module.exports = {
   entry: './src/components/App.react.js',
   resolve: {
     extensions: ['.js', '.react.js', '.json'],
-    /*modules: [
+    modules: [
       path.resolve(__dirname, 'node_modules'),
-      path.resolve(__dirname, './components'),
-    ],*/
+      path.resolve(__dirname, './src'),
+    ],
   },
   output: {
     path: __dirname + '/public',

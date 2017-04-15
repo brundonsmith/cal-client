@@ -1,7 +1,7 @@
 
 .component-day {
   outline: 1px solid black;
-  width: calc(14.2857142857143%); // 1/7th
+  width: calc(100% / 7);
   padding:10px;
   background:white;
 
@@ -15,9 +15,5 @@
   &.out-of-focus {
     background:#f0f0f0;
     color:rgba(0, 0, 0, 0.5);
-  }
-
-  &:not(.out-of-focus) {
-    z-index: 1;
   }
 }
