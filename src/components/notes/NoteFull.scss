@@ -1,0 +1,9 @@
+
+.component-note-full {
+  padding: 20px;
+
+  > .content {
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+}

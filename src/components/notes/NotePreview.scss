@@ -1,0 +1,23 @@
+
+.component-note-preview {
+  padding:8px;
+  user-select:none;
+  cursor:default;
+
+  > .title {
+    font-weight:bold;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+  }
+  > .body {
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+  }
+
+  &:hover,
+  &:active {
+    background-color: var(--color-background-1);
+  }
+}

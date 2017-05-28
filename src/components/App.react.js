@@ -5,15 +5,17 @@ import ReactDOM from 'react-dom';
 import Calendar from './calendar/Calendar';
 import Notes from './notes/Notes';
 
-const App = React.createClass({
+class App extends React.Component {
 
-  getInitialState: function() {
-    return {
-      mode: 'calendar',
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      mode: 'notes'
     };
-  },
+  }
 
-  componentDidMount: function() {
+  componentDidMount() {
     if(window.location.hash) {
       this.setState({
         mode: window.location.hash.substr(1),
@@ -27,9 +29,9 @@ const App = React.createClass({
         });
       }
     };
-  },
+  }
 
-  render: function() {
+  render() {
     return (
       <div className="component-app">
         {this.state.mode === 'calendar' ?
@@ -41,7 +43,8 @@ const App = React.createClass({
         : null }
       </div>
     );
-  },
-})
+  }
+
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));

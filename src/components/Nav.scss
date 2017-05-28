@@ -1,0 +1,48 @@
+
+.component-nav {
+  display:flex;
+  align-items:center;
+
+  width:100%;
+  padding:15px;
+  color:white;
+  background-color: var(--color-primary);
+  z-index:100;
+
+  > [class*="-button"] {
+    flex-grow:0;
+    flex-shrink:0;
+    font-size:32px;
+  }
+  > .menu-button {
+    margin-right:15px;
+  }
+  > .search-button {
+    margin-left:15px;
+  }
+
+  > .title,
+  > .search {
+    flex-basis:0;
+    flex-shrink:1;
+    overflow:hidden;
+  }
+
+  > .title {
+    flex-grow:1;
+    font-size:22px;
+  }
+
+  > .search {
+    flex-grow:0;
+  }
+
+  &.searching {
+    > .title {
+      flex-grow:0;
+    }
+    > .search {
+      flex-grow:1;
+    }
+  }
+}

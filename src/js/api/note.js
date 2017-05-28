@@ -1,5 +1,5 @@
 
-var apiRoot = 'http://localhost:8080';//'https://shielded-wave-87292.herokuapp.com';
+var apiRoot = /*'http://localhost:8080';*/'https://shielded-wave-87292.herokuapp.com';
 
 var headers = {
   'Content-Type': 'application/json',

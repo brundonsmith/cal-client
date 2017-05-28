@@ -17,6 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "marked": "^0.3.6",
+    "mutable-model": "^1.0.1",
+    "node-sass": "^4.5.3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
@@ -26,6 +28,7 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
     "install": "^0.8.7",
+    "parallelshell": "^2.0.0",
     "webpack": "^2.3.2"
   }
 }
